@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+	{% load static %}
+
+	<link rel="stylesheet" type="text/css" href="{% static 'contactlist/profile.css' %}">
+
+	<head>
+		<meta charset="UTF-8">
+    
+    
+
+		<title>Profile</title>
+	</head>
+	<body>
+	
+	
+	
+		<div class="contact-card">
+			<form action = "{% url 'delete' contact.id %}" class="Form"  method="POST" >
+			{% csrf_token %}
+		
+			<p  id = "first">{{ contact.first_name }} </p>
+			<p  id = "last"> {{ contact.last_name }} </p>
+			<p  id = "phone">{{ contact.phone }} </p>
+			<p  id = "email"> {{ contact.email }} </p>
+			<p  id = "email"> {{ contact.address }} </p>
+			<input type ="submit" value="delete" id="delete"/> 
+	    
+			</form>
+			<a href="{% url 'index' %}">
+				<button id = "back"> Back </button>	 
+				</a>
+		</div>	
+	
+	
+	
+	</body>
+</html>

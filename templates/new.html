@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'contactlist/form.css' %}">
+
+
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>Add Contact</title>
+    
+</head>
+	<body>
+  
+		<h2 id="prompt"> Please enter contact information </h2>
+		<div style="display: flex;  justify-content: center;align-items: center;">
+			<form class="Form"  method="POST" >
+			{% csrf_token %}
+			<div class="input-group">
+				<input name="firstName" placeholder="First Name" required = "true">
+				<label for="firstName">First name</label>
+			</div>
+			
+			
+			<div class="input-group">
+				<input name="lastName" placeholder="Last Name" required = "true">
+				<label for="lastName">Last name</label>
+			</div>
+			
+			
+			<div class="input-group">
+				<input name="email" placeholder="Email" required = "true">
+				<label for="email">Email</label>
+			</div>
+			
+			
+			<div class="input-group">
+				<input name="phone" placeholder="Phone" required = "true">
+				<label for="phone">Phone</label>
+			</div>
+			
+			
+			<div class="input-group">
+				<input name="address" placeholder="Address" required = "true">
+				<label for="address">Address</label>
+			</div>
+			
+			
+			<button class="no-padding" style = >Submit</button>
+			<a href="{% url 'index' %}">
+			<input id = "backBtn" type = "button" value="Back" />
+			
+			</form>
+		</div>
+    </body>
+</html>

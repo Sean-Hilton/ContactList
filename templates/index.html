@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+	{% load static %}
+
+	<link rel="stylesheet" type="text/css" href="{% static 'contactlist/style.css' %}">
+
+	<head>
+		<meta charset="UTF-8">
+    
+    
+		<title>Contact Form</title>
+	
+	</head>
+	<body>
+
+	
+		<div class ="myWrap">
+			<h2 class= "welcome"> Welcome to your Contact list </h2>
+	
+			<a href="{% url 'add-contact' %}"> 
+			<input type = "submit" value="Add Contact" id ="submit"/></a>
+		</div>
+	
+	
+	
+		<form action "/" method="GET" class="search" id='searchForm'>
+			<br><input type = "search-name" id ="search" name = "search" placeholder = "Search" value="{{search_input}}"/>
+			<i onclick="document.getElementById('searchForm').submit();"> </i>
+		</form>
+		{% for contact in contacts reversed %}
+	
+		<div class="contact-card">
+		
+			<p  id = "first">{{ contact.first_name  }} </p>
+			<p  id = "last"> {{ contact.last_name }} </p>
+	
+			<a href="{% url 'profile' contact.id %}"> 	
+			<button id="view"> View Contact </button>
+		</div>	
+		</a>
+		{% empty %}
+		<h4 id = "noentry">No entry found..</h4>
+	
+		{% endfor %}
+
+	
+
+	
+	</body>
+</html>
