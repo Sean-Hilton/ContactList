@@ -1,5 +1,5 @@
 # ContactList
-My version of a basic contact list
+My version of a basic contact list developed in Python/Django
 
 
 # Instructions
