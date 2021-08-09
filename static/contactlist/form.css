@@ -1,3 +1,17 @@
+#prompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+	font-family:"Trebuchet MS";
+  
+}
+
+body {
+
+  background-color: rgb(183, 198, 199);
+
+}
 
 .input-group {
   position: relative;
@@ -14,7 +28,7 @@
   left: 10px;
   top: 50%;
   color: white;
-  font-weight: 130;
+  font-weight: 100;
   z-index: 0;
 }
 
@@ -23,7 +37,7 @@
   z-index: 1;
   padding: 10px;
   width: 250px;
-  background: #white;
+  background: white;
   border: 0;
   border-bottom: 2px solid #ccc;
   font-size: 20px;
@@ -64,8 +78,8 @@ button:active {
   outline: 0;
 }
 #backBtn{
-  margin-top: 10px;
-  width: 100%;
+	margin-top: 10px;
+	width: 100%;
   border: 0;
   background: white;
   border: 2px solid #ccc;
@@ -78,13 +92,7 @@ button:active {
 	
 }
 #backBtn:hover{
-  color: #707070;
+	color: #707070;
   border-color: #20B2AA;
   cursor: pointer;
-}
-#prompt {
-	
-  margin-left: 35em;
-  margin-bottom: 4em;
-  font-family:Trebuchet MS;
 }

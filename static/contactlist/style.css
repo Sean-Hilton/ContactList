@@ -8,46 +8,51 @@
     border-radius: 10px;
     max-width: 600px;
     max-height: 155px;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     padding-left: 2em;
-    margin-left: 43em;
-    margin-top: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em auto;
 	
 	
 	
   }
   body{
 	  background-color: rgb(183, 198, 199);
-	  width: 100%;
+	  
 	 
 	
 	  
   }
 .contact-card p {
-    margin-left: 9px;
+    margin-left: 5px;
     margin-top: 0;
 	width: 180%;
+    
 	
   }
   
-.wrapper {
-	margin-left: 8em;
 
-}
 
 .welcome {
 	font-family:Trebuchet MS;
-	margin-right: 3em;
+	
 	
 }
 
 .myWrap {
-position: relative;
- margin-left: 55em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
 }	
 	  
 #submit {
-	width: 15%;
+	
     border: 0;
     background: white;
     border: 2px solid #ccc;
@@ -57,12 +62,13 @@ position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
     background-color: white;
-	margin-left: 5em;
+	
 	
 }
 
 #view{
-	width: 75%;
+    
+	width: 100%;
     border: 0;
     background: white;
     border: 2px solid #ccc;
@@ -72,26 +78,35 @@ position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
     background-color: white;
-	margin-left: 5em;
+	
 	
 }
 
 submit:hover {
-   color: #707070;
-  border-color: #20B2AA;
-  cursor: pointer;
+    color: #707070;
+    border-color: #20B2AA;
+    cursor: pointer;
 }
 
 
-#search {
+#searchForm {
 	
-	margin-left: 70em;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    
+    
 	
 }
 
-#noentry{
+#noEntry{
 	font-family:Trebuchet MS;
-	margin-left: 60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 	
 	
 }
