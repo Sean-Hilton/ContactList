@@ -24,7 +24,7 @@
 	
 	
 	
-		<form action "/" method="GET" class="search" id='searchForm'>
+		<form action = "/" method="GET" class="search" id='searchForm'>
 			<br><input type = "search-name" id ="search" name = "search" placeholder = "Search" value="{{search_input}}"/>
 			<i onclick="document.getElementById('searchForm').submit();"> </i>
 		</form>
@@ -37,11 +37,13 @@
 	
 			<a href="{% url 'profile' contact.id %}"> 	
 			<button id="view"> View Contact </button>
-		</div>	
 		</a>
+		</div>	
+		
 		{% empty %}
-		<h4 id = "noentry">No entry found..</h4>
-	
+		<div id="noEntry">
+			<h4 id = "noentry">No entry found..</h4>
+		</div>
 		{% endfor %}
 
 	

@@ -7,14 +7,16 @@
 
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     
     <title>Add Contact</title>
     
 </head>
 	<body>
-  
-		<h2 id="prompt"> Please enter contact information </h2>
+		<div id = "prompt">
+			<h2> Please enter contact information </h2>
+		</div>
+		
 		<div style="display: flex;  justify-content: center;align-items: center;">
 			<form class="Form"  method="POST" >
 			{% csrf_token %}
